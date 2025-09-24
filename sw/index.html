@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="codigo.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <h1>Catálogo de Produtos</h1>
+    <div class="carrossel-conatiner">
+        <div class="carrossel">
+            <img src="img/banner1.jpg" alt="1">
+            <img src="img/banner2.jpg" alt="2">
+            <img src="img/banner3.jpg" alt="3">
+            <img src="img/banner4.jpg" alt="4">
+            <img src="img/banner5.jpg" alt="5">
+        </div>
+        <button class="seta seta-anterior">&#10094</button>
+        <button class="seta seta-anterior">&#10095</button>
+    </div>
     <div class="produtos-container">
         <div class="produto">
             <div class="imagem-produto"><img src=""></div>
@@ -83,7 +95,6 @@
         </div>
     </div>
 
-    
     <button id="btn-carrinho" aria-label="Abrir carrinho">🛒
         <span id="contador-quantidade">0</span>
     </button>
@@ -93,5 +104,6 @@
         <div id="total-carrinho">Total: R$0,00</div>
         <button id="btn-finalizar">Finalizar compra</button>
     </aside>
+    <a href="faq.html">FAQ</a>
 </body>
 </html>

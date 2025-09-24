@@ -103,7 +103,7 @@ h1{
 #carrinho-lateral{
     position: fixed;
     top: 0;
-    right: 0; /*mudar para -350 quand fizer o javascript*/
+    right: -350px;
     width: 350px;
     height: 100%;
     background-color: aqua;
@@ -204,4 +204,59 @@ h1{
 
 #btn-finalizar:hover{
     background-color: deeppink;
+}
+
+.carrossel-container{
+    position:relative;
+    width: 80vw;
+    height: 30vw;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.carrossel{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+}
+
+.seta{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    user-select: none;
+    background-color: transparent;
+    color: white;
+    transition: color 0.3s;
+}
+
+.seta:hover{
+    color: #ddd;
+}
+
+.seta-anterior{
+    left: 10px;
+}
+
+.seta-proximo{
+    right: 10px;
 }
